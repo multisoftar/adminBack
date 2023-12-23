@@ -1,0 +1,98 @@
+<div class="content-body">
+    <div class="container-fluid">
+        <div class="page-titles">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a routerLink="../solutionAll">Productos</a></li>
+                <li class="breadcrumb-item active"><a href="javascript:void(0)">Agregar producto</a></li>
+            </ol>
+        </div>
+        <!-- row -->
+        <div class="row">
+            <div class="col-xl-12 col-xxl-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title"></h4>
+                    </div>
+                    <div class="card-body">
+
+                        <form>
+                            <div class="row">
+                                <!-- <div class="col-md-4">
+                                <div class="">
+                                    <div class="">
+                                    <ngx-awesome-uploader
+                                    [adapter]="adapter"
+                                    [captions]="captions">
+                                    </ngx-awesome-uploader>
+                                    </div>
+                                </div>
+                                </div> -->
+                                <div class="col-md-12">
+                                  
+                                    <div class="">
+                                    <div class="">
+                                    <div class="form-group">
+                                        <label for="event-name">Nombre del producto/solución</label>
+                                        <input  class="form-control" placeholder="nombre" type="text" [(ngModel)]="data.name" name="name" required  [ngModelOptions]="{standalone: true}">
+                                    </div>
+                                    </div>
+                                </div>
+                                                            
+                                <div class="">
+                                    <div class="">
+                                    <div class="form-group">
+<!--                                         <label for="event-description">Industria</label>
+ -->                                        <!-- <select class="form-control form-control-lg default-select ">
+                                        <option (click)="onCategorySelect(category)" *ngFor="let category of yeoman.allcategory" [value]="category.idCategory">{{ category.name }}</option>
+                                        </select> -->
+                                        
+                                        <!-- <select id="category" class="form-control wide my-custom-select" [(ngModel)]="category" (ngModelChange)="setCategory(category)" [ngModelOptions]="{standalone: true}">
+                                            <option *ngFor="let category of yeoman.allcategory, let i = index " [ngValue]="i"> 
+                                                <span   style="cursor:pointer;">{{category.name}}</span>
+                                            </option>
+                                        </select> -->
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="">
+                                        
+                                    <div class="form-group">
+                                        <label for="event-description">Descripción</label>
+                                        <textarea    [ngModelOptions]="{standalone: true}" placeholder="Resumen" type="text" [(ngModel)]="data.description"class="form-control" ></textarea>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="row">    
+                                    <div class="col-lg-8">
+                                        <div class="">
+                                            
+                                        <div class="form-group">
+                                            <label for="event-description">Listado de modulos</label>
+                                            <textarea    [ngModelOptions]="{standalone: true}" placeholder="modulos" type="text" [(ngModel)]="data.moduless"class="form-control" ></textarea>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                               
+                                
+                                </div>
+                             
+                            </div>
+                            <div div class="popup-box-actions medium void" style="text-align: end;">
+                                <button class="btn btn-primary" id="closeButton"  (click)="onSubmit()" style="background-color: #558b2f;
+                                border-color: #558b2f; margin-right: 10px;">Guardar producto!</button>
+                                <button class="btn btn-primary" id="closeButton"  (click)="cancelarUpdate()">Cancelar!</button>
+                            </div>
+                        </form>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
